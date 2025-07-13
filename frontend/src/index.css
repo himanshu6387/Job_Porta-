@@ -1,0 +1,30 @@
+/* Signup.css */
+.signup-bg {
+  background-color: #111;
+  background-image: url('https://cdn.pixabay.com/photo/2015/06/10/07/03/building-804526_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .signup-bg {
+    background-image: none;
+  }
+}
+
+/* Login.css */
+.login-bg {
+  background-color: #111;
+  background-image: url('https://img.freepik.com/free-photo/we-are-hiring-digital-collage_23-2149667031.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .login-bg {
+    background-image: none;
+  }
+}
+
