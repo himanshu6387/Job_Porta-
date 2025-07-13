@@ -10,7 +10,7 @@ const ViewCreatedJob = () => {
     const apifetch = async () => {
       try {
         const userId = JSON.parse(localStorage.getItem('userId'));
-        const res = await axios.get(`http://localhost:8090/api/jobs/getMyJob/${userId}`);
+        const res = await axios.get(`https://job-portal-backend-tti1.onrender.com/api/jobs/getMyJob/${userId}`);
         setCreatedJob(res.data.jobs);
       } catch (error) {
         console.error('Error fetching jobs:', error);

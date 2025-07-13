@@ -11,7 +11,7 @@ const DashBoard = () => {
     const { user,search,setSearch } = useContext(AuthContext)
 
     const apifetch = async () => {
-        const res = await axios.get('http://localhost:8090/api/jobs/getAllJobs')
+        const res = await axios.get('https://job-portal-backend-tti1.onrender.com/api/jobs/getAllJobs')
         setJobs(res.data.jobs)
     }
 

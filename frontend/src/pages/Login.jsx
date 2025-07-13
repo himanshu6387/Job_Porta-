@@ -21,7 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8090/api/user/login', form);
+      const res = await axios.post('https://job-portal-backend-tti1.onrender.com/api/user/login', form);
       login(res.data.token);
       toast.success(res.data.message);
 

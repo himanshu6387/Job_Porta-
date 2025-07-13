@@ -43,7 +43,7 @@ const ApplyForm = () => {
 
     setLoading(true);
     try {
-      await axios.post(`http://localhost:8090/api/applied/apply/${jobId}`, form, {
+      await axios.post(`https://job-portal-backend-tti1.onrender.com/api/applied/apply/${jobId}`, form, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

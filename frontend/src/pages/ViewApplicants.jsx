@@ -12,7 +12,7 @@ const ViewApplicants = () => {
   useEffect(() => {
     const fetchApplicants = async () => {
       try {
-        const res = await axios.get('http://localhost:8090/api/applied/employer/applicants', {
+        const res = await axios.get('https://job-portal-backend-tti1.onrender.com/api/applied/employer/applicants', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setApplicants(res.data.applications || []);

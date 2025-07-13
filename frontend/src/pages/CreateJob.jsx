@@ -30,7 +30,7 @@ const CreateJob = () => {
         const formdata = {
             ...job,userId
         }
-        const res = await axios.post('http://localhost:8090/api/jobs/createJob', formdata)
+        const res = await axios.post('https://job-portal-backend-tti1.onrender.com/api/jobs/createJob', formdata)
         toast.success(res.data.message)
         navigate('/employerPanel')
     }

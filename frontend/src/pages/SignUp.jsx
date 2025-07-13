@@ -35,7 +35,7 @@ const Signup = () => {
     formData.append('profileImage', form.profileImage);
 
     try {
-      const res = await axios.post('http://localhost:8090/api/user/signup', formData);
+      const res = await axios.post('https://job-portal-backend-tti1.onrender.com/api/user/signup', formData);
       toast.success(res.data.message);
       if (res.data.success) {
         navigate('/login');

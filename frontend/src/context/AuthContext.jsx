@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
                 localStorage.setItem('userId',JSON.stringify(userId))
 
-               const res =  await axios.get(`http://localhost:8090/api/user/getUserById/${userId}`)
+               const res =  await axios.get(`https://job-portal-backend-tti1.onrender.com/api/user/getUserById/${userId}`)
             //    console.log(res)
                setUser(res.data.user)
             }
